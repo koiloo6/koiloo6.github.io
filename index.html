@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styling/main-style.css">
+  <link rel="icon" type="image/png" href="assets/heart-icon.png">
+  <title>love u</title>
+</head>         
+<body>
+  <div class="container">
+    <h2>Lorem ipsum dolor sit amet</h2>
+      <div class="button-container">
+        <button class="button no-button" onclick="showWarning(event)">NOO</button>
+        <button class="button yes-button" onclick="fadePageOut(event)">YES</button>
+      </div>
+  </div>
+  <script>
+    function showWarning(event) {
+      event.preventDefault(); // Prevent default action
+      alert("Are you sure you want to choose 'NO'? This action may have consequences.");
+    }
+
+    function fadePageOut(event) {
+      event.preventDefault(); // Prevent default action
+
+      // Add fade-out class to body
+      document.body.classList.add('fade-out');
+
+      // Redirect to the new page after the fade-out animation completes
+      setTimeout(function() {
+        window.location.href = "memory.html";
+      }, 500); // Adjust timing to match the animation duration
+    }
+  </script>
+
+</body>
+</html>

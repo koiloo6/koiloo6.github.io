@@ -1,0 +1,122 @@
+
+    body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FF90BC;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .container {
+    text-align: center;
+    background-color: #F9F9E0;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 25rem; /* Skala container untuk desktop */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box; /* Mengikutkan padding dan border dalam perhitungan lebar */
+    box-shadow: 15px 15px 4px -3px rgba(0, 0, 0, 0.25);
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem; /* Jarak antara tombol dan teks */
+    margin-bottom: 1.5rem;
+  }
+  .button {
+    margin: 0 1rem;
+    padding: 1.5rem 3rem; /* Adjusted padding for both buttons */
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none; /* Remove stroke or border around the buttons */
+    border-radius: 0.5rem; /* Add border radius for button */
+    width: 10rem;
+  }
+
+  /* Styles for the "No" button */
+  .no-button {
+    background-color: #F9F9E0;
+    color: #000; /* Black text */
+    border: 1px solid black; /* Add border to "No" button */
+  }
+
+  /* Styles for the "Yes" button */
+  .yes-button {
+    background-color: #8ACDD7; /* Light blue */
+    color: #000; /* Black text */
+    transition: 0.3s, ease-in-out;
+  }
+
+  .yes-button:hover{
+    background-color: #6dafba;
+    color: white;
+  }
+
+  .no-button:hover{
+    background-color: #eb90b5;
+    color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      text-align: center;
+      background-color: #F9F9E0;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 20rem; /* Skala container untuk desktop */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      box-sizing: border-box; /* Mengikutkan padding dan border dalam perhitungan lebar */
+      box-shadow: 15px 15px 4px -3px rgba(0, 0, 0, 0.25);
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem; /* Jarak antara tombol dan teks */
+      margin-bottom: 1.5rem;
+    }
+    .button {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1.5rem; /* Adjusted padding for both buttons */
+      font-size: 1.2rem;
+      cursor: pointer;
+      border: none; /* Remove stroke or border around the buttons */
+      border-radius: 0.5rem; /* Add border radius for button */
+      width: 5rem;
+    }
+
+    /* Styles for the "No" button */
+    .no-button {
+      background-color: #F9F9E0;
+      color: #000; /* Black text */
+      border: 0.5px solid black; /* Add border to "No" button */
+    }
+
+    /* Styles for the "Yes" button */
+    .yes-button {
+      background-color: #8ACDD7; /* Light blue */
+      color: #000; /* Black text */
+      transition: 0.3s, ease-in-out;
+    }
+
+    .yes-button:hover{
+      background-color: #6dafba;
+      color: white;
+    }
+    
+  
+  
+  
+  
+  }

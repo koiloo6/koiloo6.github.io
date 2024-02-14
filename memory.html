@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/heart-icon.png">
+    <title>love u</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling/memory-style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>anjay mabar hayyuk</h1>
+
+    <div class="video-container">
+        <video controls>
+            <source src="assets/video/jjff.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="caption">
+        <p>"Memories are timeless treasures of the heart."</p>
+        <p>- Unknown</p>
+        <button class="asem" onclick="fadePageOut(event)">my message for you</button>
+  </div>
+    </div>
+</div>
+ <script>
+    function fadePageOut(event) {
+    event.preventDefault(); // Prevent default action
+
+    // Add fade-out class to body
+    document.body.classList.add('fade-out');
+
+    // Redirect to the new page after the fade-out animation completes
+    setTimeout(function() {
+      window.location.href = "mesaages.html";
+    }, 500); // Adjust timing to match the animation duration
+  }
+ </script>
+</body>
+</html>
